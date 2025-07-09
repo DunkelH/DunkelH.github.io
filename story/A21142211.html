@@ -1,82 +1,142 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/style.css">
-        <title>감정오류 코드</title>
-    </head>
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>감정오류 코드</title>
+</head>
 
-    <body>
-        <div class="container">
-            <div class="blank"><p onclick="location.href='https://dunkelh.github.io/'"><img src="../assets/logo.svg" alt="logo"></p></div>
-            <div class="wrap">
-                <div id="jihoon_normal" class="jihoonpic" style="display: block;"><img src="../assets/yujin.PNG" ></div>
-                <div id="jihoon_smile1" class="jihoonpic" style="display: none;"><img src="../assets/yujin.PNG" ></div>
-                <div id="namebox_kimjihoon" class="namebox"><p>세아</p></div>
-                <div id="namebox_none" class="namebox"><p>???</p></div>
-                <div id="namebox_you" class="namebox" style="display: block;"><p>유잔</p></div>
-                <div class="logbox">
-                    <p class="log">대사1</p><!--로그0-->
-                    <p class="log">대사2</p><!--로그1-->
-                    <p class="log">대사2</p><!--로그2-->
-                    <p class="log">대사2</p><!--로그3-->
-                    <p class="log">대사2</p><!--로그4-->
-                    <p class="log">대사2</p><!--로그5-->
-                    <p class="log">대사2</p><!--로그6-->
-                    <p class="log">대사2</p><!--로그7-->
-                    <p class="log">대사2</p><!--로그8-->
-                    <div id="nextbutton"><img src="../assets/next_button.svg" alt="button"></div>
-                </div>
+<body>
+<div class="container">
+    <div class="blank"><p onclick="location.href='https://dunkelh.github.io/'"><img src="../assets/logo.svg" alt="logo"></p></div>
+    <div class="wrap">
+        <div id="yujinimg" class="jihoonpic" style="display: block;"><img src="../assets/yujin.PNG" ></div>
+        <div id="seahimg" class="jihoonpic" style="display: none;"><img src="../assets/seah.PNG" ></div>
+        <div id="rianimg" class="jihoonpic" style="display: none;"><img src="../assets/rian.PNG" ></div>
+        <div id="namebox_seah" class="namebox" ><p>세아</p></div>
+        <div id="namebox_rian" class="namebox" style="display: block;"><p>리안</p></div>
+        <div id="namebox_you" class="namebox" ><p>유진</p></div>
+        <div id="story1" class="choice"> <!--스토리 1번 선택지-->
+            <div class="choice_wrap">
+                <div id = "choice1" class="answer" ><p>어떻게 되든 싸우고 보자. 세아를 온몸으로 보호해야 해</p></div>
+                <div id = "choice2" class="answer" ><p>대화를 시도해봐야 할까..?</p></div>
             </div>
-            <div class="blank"></div>
         </div>
+        <div class="logbox">
+            <p class="log">들켜버렸다 이마음, 이관계</p><!--로그0-->
+            <p class="log">하지만 세아의 손을 놓을 수 없어.</p><!--로그1-->
+            <p class="log">도무지 변명거리가 떠오르지 않는다..!</p><!--로그2-->
+            <p class="log">이런 리안이 총을 꺼냈잖아..!!</p><!--로그3-->
+            <p class="log">이런 리안이 총을 꺼냈잖아..!!</p><!--로그4-->
+            <p class="log">잠깐 일단 내 말 좀 들어..!! 엇 당신 얼굴에 그 상처는?</p><!--로그5-->
+            <p class="log">ㄱ..감정이 생긴 안드로아드는 폐기처분해야 돼. 비켜</p><!--로그6-->
+            <p class="log">너야 말로 안드로이드임을 숨기고 사람을 사칭한거면 처벌 대상이</p><!--로그7-->
+            <p class="log">상관없어. 널 이 자리에서 제거해버리면 그만이야.</p><!--로그8-->
+            <p class="log">당신도 나와 똑같은 안드로이드 였군요.</p><!--로그9-->
+            <p class="log">당신은 그저 사랑이란 감정을 느껴보지 못한 것에 대해 질투하는 것 아닌가요..?</p><!--로그10-->
+            <p class="log">4편 끝 다음으로 넘어갑니다.</p><!--로그11-->
+            <p class="log">이 감정이 오류라면… 이 몸으로 증명하겠어.</p><!--로그12-->
+            <p class="log">멍청하군. 네 감정은 논리보다 느렸어.</p><!--로그13-->
+            <p class="log">탕!</p><!--로그14-->
+            <p class="log">유진… 안 돼… 죽지 마…!</p><!--로그15-->
+            <p class="log">처음이자… 마지막 감정이었어요. 고마웠어요…</p><!--로그16-->
+            <p class="log">탕!</p><!--로그17-->
+            <p class="log">Bad End. 넘기면 메인으로 이동합니다.</p><!--로그18-->
+            <p class="log">Bad End. 넘기면 메인으로 이동합니다.</p><!--로그19-->
 
-        <script>
-        var i = 0;
-        var nextbutton = document.getElementById("nextbutton"); 
-        var log = document.getElementsByClassName("log"); 
-        var nameboxNone = document.getElementById("namebox_none");
-        var nameboxJihoon = document.getElementById("namebox_kimjihoon");
-        var nameboxYou = document.getElementById("namebox_you");
-        var jihoonNormal = document.getElementById("jihoon_normal");
-        var jihoonSmile1 = document.getElementById("jihoon_smile1");
-        
-        nextbutton.addEventListener("click", function(){
-        i++; //버튼 클릭할 때마다 변수 증가, 변수=로그 번호로 변수 번호에 맞는 로그 보여줌
-        console.log(i);
-        
-        if(i==3 || i==8){ //플레이어 네임박스 나타나는 로그
-            nameboxYou.style.display="block"
-        } else{
-            nameboxYou.style.display="none"
-        }
-        
-        if(i==1 || i==2 || i==4 || i==6 || i==7){ //지훈 네임박스 나타나는 로그
-        nameboxJihoon.style.display="block"
-        }else {
-            nameboxJihoon.style.display="none"
-        } ;
-        
-        if(i==0 || i==6 || i==7 || i==8 || i==9) { //지훈 노멀 아바타 이미지 나타나는 로그
-        jihoonNormal.style.display="block"
-        }else{
-            jihoonNormal.style.display="none"
-        };
-        
-        if(i==1 || i==2 || i==3 || i==4 || i==5){ //지훈 스마일1 아바타 이미지 나타나는 로그
-        jihoonSmile1.style.display="block"
-        }else {
-        jihoonSmile1.style.display="none"
-        };
-        
-        var loghidden = log[i-1];
-        var logshow = log[i];
-        loghidden.style.display="none";
-        logshow.style.display="block";
+            
 
-        if(i==8){ //마지막에 next button 숨기기
-        nextbutton.style.display="none";
-        };
-        
-        });
-        </script>
-    </body>
+            <div id="nextbutton"><img src="../assets/next_button.svg" alt="button"></div>
+        </div>
+    </div>
+    <div class="blank"></div>
+</div>
+
+<script>
+var i = 0;
+var nextButton = document.getElementById("nextbutton");
+var log = document.getElementsByClassName("log");
+var nameboxRian = document.getElementById("namebox_rian");
+var nameboxSeah = document.getElementById("namebox_seah");
+var nameboxYou = document.getElementById("namebox_you");
+var yujin = document.getElementById("yujinimg");
+var seah = document.getElementById("seahimg");
+var rian = document.getElementById("rianimg");
+var story1 = document.getElementById("story1");
+var choice1 = document.getElementById("choice1");
+var choice2 = document.getElementById("choice2");
+
+choice1.addEventListener("click", function(){
+    i = 12; 
+    console.log(i);
+    story1.style.display="none";
+    nextButton.style.display="block";
+    var loghidden = log[4];
+    var logshow = log[i];
+    loghidden.style.display="none";
+    logshow.style.display="block";
+})
+
+choice2.addEventListener("click", function(){
+    i = 5;
+    console.log(i);
+    story1.style.display="none";
+    nextButton.style.display="block";
+    var loghidden = log[4];
+    var logshow = log[i];
+    loghidden.style.display="none";
+    logshow.style.display="block";
+})
+
+nextButton.addEventListener("click", function(){
+
+    i++; //버튼 클릭할 때마다 변수 증가, 변수=로그 번호로 변수 번호에 맞는 로그 보여줌
+    console.log(i);
+
+    if(i==10 || i==9 || i==15 || i==16){ // 세아 네임박스 나타나는 로그
+        nameboxSeah.style.display="block"
+        nameboxRian.style.display="none"
+        nameboxYou.style.display="none"
+        rian.style.display="none"
+        yujin.style.display="none"
+        seah.style.display="block"
+    }else if(i == 6 || i == 8 || i == 13 || i == 14 || i == 17 || i == 18|| i == 19){ //리안 네임박스 나타나는 로그
+        nameboxSeah.style.display="none"
+        nameboxRian.style.display="block"
+        nameboxYou.style.display="none"
+        rian.style.display="block"
+        yujin.style.display="none"
+        seah.style.display="none"
+    }else { //유잔 네임박스 나타나는 로그
+        nameboxSeah.style.display="none"
+        nameboxRian.style.display="none"
+        nameboxYou.style.display="block"
+        rian.style.display="none"
+        yujin.style.display="block"
+        seah.style.display="none"
+    };
+
+    // 로그 박스 초기화 및 표현하는 부분
+    var loghidden = log[i-1]; 
+    var logshow = log[i];
+    loghidden.style.display="none";
+    logshow.style.display="block";
+
+    if(i==4){ //선택지에서 next button 숨기기
+        story1.style.display="block";
+        nextButton.style.display="none";
+    };
+
+    if(i==11){ // 다음 페이지로 넘어간다
+        location.href='A18012211.html';
+    };
+
+    if(i==19){ // 다음 페이지로 넘어간다
+        location.href='https://dunkelh.github.io/';
+    };
+
+});
+
+
+
+</script>
+</body>
 </html>
