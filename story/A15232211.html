@@ -1,82 +1,155 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/style.css">
-        <title>감정오류 코드</title>
-    </head>
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>감정오류 코드</title>
+</head>
 
-    <body>
-        <div class="container">
-            <div class="blank"><p onclick="location.href='https://dunkelh.github.io/'"><img src="../assets/logo.svg" alt="logo"></p></div>
-            <div class="wrap">
-                <div id="jihoon_normal" class="jihoonpic" style="display: block;"><img src="../assets/yujin.PNG" ></div>
-                <div id="jihoon_smile1" class="jihoonpic" style="display: none;"><img src="../assets/yujin.PNG" ></div>
-                <div id="namebox_kimjihoon" class="namebox"><p>세아</p></div>
-                <div id="namebox_none" class="namebox"><p>???</p></div>
-                <div id="namebox_you" class="namebox" style="display: block;"><p>유잔</p></div>
-                <div class="logbox">
-                    <p class="log">대사1</p><!--로그0-->
-                    <p class="log">대사2</p><!--로그1-->
-                    <p class="log">대사2</p><!--로그2-->
-                    <p class="log">대사2</p><!--로그3-->
-                    <p class="log">대사2</p><!--로그4-->
-                    <p class="log">대사2</p><!--로그5-->
-                    <p class="log">대사2</p><!--로그6-->
-                    <p class="log">대사2</p><!--로그7-->
-                    <p class="log">대사2</p><!--로그8-->
-                    <div id="nextbutton"><img src="../assets/next_button.svg" alt="button"></div>
-                </div>
+<body>
+<div class="container">
+    <div class="blank"><p onclick="location.href='https://dunkelh.github.io/'"><img src="../assets/logo.svg" alt="logo"></p></div>
+    <div class="wrap">
+        <div id="yujinimg" class="jihoonpic" style="display: block;"><img src="../assets/yujin.PNG" ></div>
+        <div id="seahimg" class="jihoonpic" style="display: none;"><img src="../assets/seah.PNG" ></div>
+        <div id="rianimg" class="jihoonpic" style="display: none;"><img src="../assets/rian.PNG" ></div>
+        <div id="namebox_seah" class="namebox" ><p>세아</p></div>
+        <div id="namebox_rian" class="namebox" style="display: block;"><p>리안</p></div>
+        <div id="namebox_you" class="namebox" ><p>유진</p></div>
+        <div id="story1" class="choice"> <!--스토리 1번 선택지-->
+            <div class="choice_wrap">
+                <div id = "choice1" class="answer" ><p>아니야 고백은 정말 선 넘은 것 같아.. 마음을 다시 넣어둔다.</p></div>
+                <div id = "choice2" class="answer" ><p>이 거리.. 규정 위반이다. 근데 이상하게 이 위반.. 계속하고 싶다</p></div>
             </div>
-            <div class="blank"></div>
         </div>
+        <div class="logbox">
+            <p class="log">오늘은 세아와의 심문이 있는 날. 오늘은 웬지 그날의 기억이 더 선명하게 기억나..</p><!--로그0-->
+            <p class="log">왜 나는 오늘을 기다리고 있었던 걸까.. 오늘 왠지 모르게 심장이 먼저 출근한 느낌이다.</p><!--로그1-->
+            <p class="log">이런 말을 하게 될 줄은 몰랐지만.. 설레인다</p><!--로그2-->
+            <p class="log">그녀가 웃으면..난 말 수가 줄어든다. 오늘은 얼마나 조용해지게 될까.</p><!--로그3-->
+            <p class="log">유진 심문관님 안녕하세요 좋은 아침이에요</p><!--로그4-->
+            <p class="log">좋은 아침.. 네가 웃고 들어오나까,</p><!--로그5-->
+            <p class="log">연구소 조명이 괜히 더 밝네</p><!--로그6-->
+            <p class="log">헙..심문관님이 그렇게 말해주시니, 오늘 하루가 특별해졌어요</p><!--로그7-->
+            <p class="log">좋은 아침인건..아마 심문관님 덕분이에요..!</p><!--로그8-->
+            <p class="log">심문관님, 인간은 왜 뺨을 붉히는 건가요? 얼굴이 빨개요.</p><!--로그9-->
+            <p class="log">너무 가까워.. 딱 3센치만 더 오면 이건 심문이 아니라 데이트다..</p><!--로그10-->
+            <p class="log">더 이상 못참겠어</p><!--로그11-->
+            <p class="log">안드로이드고 뭐고 내 마음을 고백해버리고 싶은데 어떻게 하지?</p><!--로그12-->
+            <p class="log">안드로이드고 뭐고 내 마음을 고백해버리고 싶은데 어떻게 하지?</p><!--로그13-->
+            <p class="log">이 거리.. 규정 위반이다. 근데 이상하게 이 위반.. 계속하고 싶다</p><!--로그14-->
+            <p class="log">그러니까, 세아. 나 너 좋아해</p><!--로그15-->
+            <p class="log">세아와 유진, 관계 진전 가속화</p><!--로그16-->
+            <p class="log">더 이상 관찰만으론 안돼. 허가만 떨어지면 즉시 제거한다.</p><!--로그17-->
+            <p class="log">헙..저도 사실 그래왔어요</p><!--로그18-->
+            <p class="log">저도 많이 좋아해요 유진 심문관님!</p><!--로그19-->
+            <p class="log">꼼짝마!!!</p><!--로그20-->
+            <p class="log">유진, 감정 오류 발생 안드로이드를 보호한 혐의로 체포한다.</p><!--로그21-->
+            <p class="log">3편 끝 다음으로 넘어갑니다.</p><!--로그22-->
+            <p class="log">고백은 선 넘은 일이야. 그래, 딱 거기까지만. 이 마음은… 다시 넣어두자</p><!--로그23-->
+            <p class="log">...그런데</p><!--로그24-->
+            <p class="log">지금, 내 손이 떨리고 있어.</p><!--로그25-->
+            <p class="log">지금 말하지 않으면, 나는 결국 스스로를 속이게 될 거야.</p><!--로그26-->
+            <p class="log">그래. 선은 넘는다. 그 끝에 있는 건 내가 처음으로 스스로 선택한 마음이야.</p><!--로그27-->
 
-        <script>
-        var i = 0;
-        var nextbutton = document.getElementById("nextbutton"); 
-        var log = document.getElementsByClassName("log"); 
-        var nameboxNone = document.getElementById("namebox_none");
-        var nameboxJihoon = document.getElementById("namebox_kimjihoon");
-        var nameboxYou = document.getElementById("namebox_you");
-        var jihoonNormal = document.getElementById("jihoon_normal");
-        var jihoonSmile1 = document.getElementById("jihoon_smile1");
-        
-        nextbutton.addEventListener("click", function(){
-        i++; //버튼 클릭할 때마다 변수 증가, 변수=로그 번호로 변수 번호에 맞는 로그 보여줌
-        console.log(i);
-        
-        if(i==3 || i==8){ //플레이어 네임박스 나타나는 로그
-            nameboxYou.style.display="block"
-        } else{
-            nameboxYou.style.display="none"
-        }
-        
-        if(i==1 || i==2 || i==4 || i==6 || i==7){ //지훈 네임박스 나타나는 로그
-        nameboxJihoon.style.display="block"
-        }else {
-            nameboxJihoon.style.display="none"
-        } ;
-        
-        if(i==0 || i==6 || i==7 || i==8 || i==9) { //지훈 노멀 아바타 이미지 나타나는 로그
-        jihoonNormal.style.display="block"
-        }else{
-            jihoonNormal.style.display="none"
-        };
-        
-        if(i==1 || i==2 || i==3 || i==4 || i==5){ //지훈 스마일1 아바타 이미지 나타나는 로그
-        jihoonSmile1.style.display="block"
-        }else {
-        jihoonSmile1.style.display="none"
-        };
-        
-        var loghidden = log[i-1];
-        var logshow = log[i];
-        loghidden.style.display="none";
-        logshow.style.display="block";
 
-        if(i==8){ //마지막에 next button 숨기기
-        nextbutton.style.display="none";
-        };
-        
-        });
-        </script>
-    </body>
+
+
+
+            
+
+            <div id="nextbutton"><img src="../assets/next_button.svg" alt="button"></div>
+        </div>
+    </div>
+    <div class="blank"></div>
+</div>
+
+<script>
+var i = 0;
+var nextButton = document.getElementById("nextbutton");
+var log = document.getElementsByClassName("log");
+var nameboxRian = document.getElementById("namebox_rian");
+var nameboxSeah = document.getElementById("namebox_seah");
+var nameboxYou = document.getElementById("namebox_you");
+var yujin = document.getElementById("yujinimg");
+var seah = document.getElementById("seahimg");
+var rian = document.getElementById("rianimg");
+var story1 = document.getElementById("story1");
+var choice1 = document.getElementById("choice1");
+var choice2 = document.getElementById("choice2");
+
+choice1.addEventListener("click", function(){
+    i = 14; 
+    console.log(i);
+    story1.style.display="none";
+    nextButton.style.display="block";
+    var loghidden = log[13];
+    var logshow = log[i];
+    loghidden.style.display="none";
+    logshow.style.display="block";
+})
+
+choice2.addEventListener("click", function(){
+    i = 23;
+    console.log(i);
+    story1.style.display="none";
+    nextButton.style.display="block";
+    var loghidden = log[13];
+    var logshow = log[i];
+    loghidden.style.display="none";
+    logshow.style.display="block";
+})
+
+nextButton.addEventListener("click", function(){
+
+    i++; //버튼 클릭할 때마다 변수 증가, 변수=로그 번호로 변수 번호에 맞는 로그 보여줌
+    console.log(i);
+
+    if(i==18 || i==19 || i==4 || i==7 || i==8 || i==9){ // 세아 네임박스 나타나는 로그
+        nameboxSeah.style.display="block"
+        nameboxRian.style.display="none"
+        nameboxYou.style.display="none"
+        rian.style.display="none"
+        yujin.style.display="none"
+        seah.style.display="block"
+    }else if(i == 20 || i == 21 || i==16 || i == 17){ //리안 네임박스 나타나는 로그
+        nameboxSeah.style.display="none"
+        nameboxRian.style.display="block"
+        nameboxYou.style.display="none"
+        rian.style.display="block"
+        yujin.style.display="none"
+        seah.style.display="none"
+    }else { //유잔 네임박스 나타나는 로그
+        nameboxSeah.style.display="none"
+        nameboxRian.style.display="none"
+        nameboxYou.style.display="block"
+        rian.style.display="none"
+        yujin.style.display="block"
+        seah.style.display="none"
+    } ;
+
+    log[27].style.display="none";
+    // 로그 박스 초기화 및 표현하는 부분
+    var loghidden = log[i-1]; 
+    var logshow = log[i];
+    loghidden.style.display="none";
+    logshow.style.display="block";
+
+    if(i==13){ //선택지에서 next button 숨기기
+        story1.style.display="block";
+        nextButton.style.display="none";
+    };
+
+    if(i==22){ // 다음 페이지로 넘어간다
+        location.href='A21142211.html';
+    };
+
+    if(i==27){ // 다음 페이지로 넘어간다
+        i = 14;
+    };
+
+});
+
+
+
+</script>
+</body>
 </html>
